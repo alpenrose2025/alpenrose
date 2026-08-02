@@ -13,4 +13,5 @@
 5. `SHORT_VIDEO_ID_1`, `SHORT_VIDEO_ID_2`: 객실 쇼츠 영상 ID
 6. `https://booking.naver.com/`: 실제 네이버 예약 URL
 
+
 동일한 파일명을 유지한 채 JPG/WEBP 파일로 교체할 경우 index.html의 확장자도 바꿔주세요.

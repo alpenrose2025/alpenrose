@@ -128,3 +128,22 @@ header a.naver-booking-link:hover {
     max-height: 50px;
   }
 }
+
+.site-header .main-nav a.active-menu,
+.site-header .main-nav a.active-menu:visited,
+.site-header .main-nav a.active-menu:hover {
+  color:#9f1713 !important;
+  font-weight:800 !important;
+}
+.site-header .main-nav a.naver-booking-link,
+.site-header .main-nav a.naver-booking-link:visited {
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:0 16px !important;
+  border-radius:4px;
+  background:#03c75a !important;
+  color:#fff !important;
+  font-weight:800 !important;
+}

@@ -649,122 +649,129 @@ img,video,iframe{max-width:100%}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 /* =========================================================
-   ROOMS / RESERVE 모바일 가로 스크롤 제거
+   ROOMS / RESERVE 모바일 표 화면 맞춤
 ========================================================= */
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
 
-  /* ROOMS 객실 탭 101동~105동 */
+  /* ROOMS 101동 ~ 105동 탭 */
   .room-tabs-wrap {
-    padding-left: 14px;
-    padding-right: 14px;
-    overflow: visible;
+    width: 100% !important;
+    padding: 42px 12px 40px !important;
+    overflow: hidden !important;
   }
 
   .room-tabs {
-    width: 100%;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 5px;
-    overflow: visible;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    overflow: hidden !important;
   }
 
   .room-tab {
-    width: 100%;
-    min-width: 0;
-    min-height: 40px;
-    padding: 0 3px;
-    font-size: 11px;
-    white-space: nowrap;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 40px !important;
+    padding: 0 1px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
   }
 
-  /* ROOMS 객실명 / 기준인원 / 객실요금 표 */
+  .room-tab:last-child {
+    grid-column: auto !important;
+  }
+
+  /* ROOMS 객실 정보 표 */
   .room-info-wrap {
-    width: 100%;
-    overflow: visible;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 
   .room-info-table {
-    width: 100%;
-    min-width: 0;
-    table-layout: fixed;
-    font-size: 11px;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+    font-size: 11px !important;
   }
 
   .room-info-table th,
   .room-info-table td {
-    width: auto;
-    padding: 10px 4px;
-    word-break: keep-all;
-    white-space: normal;
-    line-height: 1.45;
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 9px 3px !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+    line-height: 1.4 !important;
   }
 
   .room-info-table th {
-    width: 28%;
+    width: 25% !important;
   }
 
   /* RESERVE 객실요금 표 */
-  .reserve-page .table-scroll,
-  .reserve-container .table-scroll {
-    width: 100%;
-    overflow: visible;
+  .reserve-container {
+    width: calc(100% - 24px) !important;
+    max-width: 100% !important;
   }
 
-  .reserve-page .price-table,
-  .reserve-container .price-table {
-    width: 100%;
-    min-width: 0;
-    table-layout: fixed;
-    font-size: 10px;
+  .table-scroll {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 
-  .reserve-page .price-table th,
-  .reserve-page .price-table td,
-  .reserve-container .price-table th,
-  .reserve-container .price-table td {
-    width: auto;
-    min-width: 0;
-    padding: 9px 2px;
-    white-space: normal;
-    word-break: keep-all;
-    line-height: 1.4;
+  .price-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+    font-size: 10px !important;
   }
 
-  .reserve-page .price-table th:first-child,
-  .reserve-page .price-table td:first-child,
-  .reserve-container .price-table th:first-child,
-  .reserve-container .price-table td:first-child {
-    width: 18%;
+  .price-table th,
+  .price-table td {
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    padding: 8px 2px !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+    line-height: 1.35 !important;
+  }
+
+  .price-table th:first-child,
+  .price-table td:first-child {
+    width: 17% !important;
   }
 }
 
-/* 폭이 매우 작은 휴대전화 */
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .room-tab {
-    padding: 0 1px;
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
   .room-info-table {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
   .room-info-table th,
   .room-info-table td {
-    padding: 8px 2px;
+    padding: 8px 2px !important;
   }
 
-  .reserve-page .price-table,
-  .reserve-container .price-table {
-    font-size: 9px;
+  .price-table {
+    font-size: 9px !important;
   }
 
-  .reserve-page .price-table th,
-  .reserve-page .price-table td,
-  .reserve-container .price-table th,
-  .reserve-container .price-table td {
-    padding: 8px 1px;
+  .price-table th,
+  .price-table td {
+    padding: 7px 1px !important;
   }
 }

@@ -1,0 +1,12 @@
+TOUR 페이지 이미지 개수
+
+카페호리: 5장
+민어도선착장: 4장
+학암포해수욕장: 3장
+
+현재는 사이트에 기존에 있던 사진을 임시로 연결했습니다.
+실제 사진 파일을 보내주시면 다음 경로 형태로 교체하면 됩니다.
+
+assets/images/tour/cafehori-01.jpg ~ cafehori-05.jpg
+assets/images/tour/mineodo-01.jpg ~ mineodo-04.jpg
+assets/images/tour/hakampo-01.jpg ~ hakampo-03.jpg

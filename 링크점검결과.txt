@@ -1,0 +1,8 @@
+index.html: RESERVE내부링크=True, 네이버예약링크=True
+rooms.html: RESERVE내부링크=True, 네이버예약링크=True
+facility.html: RESERVE내부링크=True, 네이버예약링크=True
+tour.html: RESERVE내부링크=True, 네이버예약링크=True
+location.html: RESERVE내부링크=True, 네이버예약링크=True
+reserve.html: RESERVE내부링크=True, 네이버예약링크=True
+
+네이버 예약 주소: https://booking.naver.com/booking/3/bizes/1427428

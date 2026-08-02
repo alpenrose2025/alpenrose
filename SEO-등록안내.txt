@@ -1,0 +1,28 @@
+알펜로제펜션 개발 단계 안내
+
+현재는 커스텀 도메인을 연결하지 않은 개발 단계입니다.
+
+제거된 항목:
+- CNAME
+- 실제 도메인 canonical
+- 실제 도메인 og:url
+- sitemap.xml
+- robots.txt의 Sitemap 주소
+
+모든 페이지 디자인과 기능을 완성한 뒤 마지막 단계에서 아래 항목을 다시 적용합니다.
+- 커스텀 도메인
+- CNAME
+- sitemap.xml
+- robots.txt
+- canonical
+- Open Graph URL
+- 네이버 서치어드바이저
+- 구글 Search Console
+
+현재 페이지:
+- index.html
+- rooms.html
+- facility.html
+- tour.html
+- location.html
+- reserve.html

@@ -1,0 +1,31 @@
+/* ROOMS / TOUR / LOCATION 작업 전 빈 페이지 공통 틀 */
+.blank-page {
+  margin: 0;
+  background: #fff;
+}
+.blank-page-main {
+  min-height: calc(100vh - 170px);
+  background: #fff;
+}
+.blank-page-placeholder {
+  min-height: calc(100vh - 170px);
+  display: grid;
+  place-items: center;
+  padding: 120px 24px 80px;
+  box-sizing: border-box;
+}
+.blank-page-placeholder span {
+  color: #d8d8d8;
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 600;
+  letter-spacing: .18em;
+}
+@media (max-width: 768px) {
+  .blank-page-main,
+  .blank-page-placeholder {
+    min-height: calc(100vh - 140px);
+  }
+  .blank-page-placeholder {
+    padding: 100px 20px 60px;
+  }
+}

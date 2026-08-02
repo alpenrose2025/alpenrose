@@ -1,6 +1,0 @@
-index.html: reserve=True, naver=True, logo=False, active=True
-rooms.html: reserve=True, naver=True, logo=False, active=True
-facility.html: reserve=True, naver=True, logo=False, active=True
-tour.html: reserve=True, naver=True, logo=False, active=True
-location.html: reserve=True, naver=True, logo=False, active=True
-reserve.html: reserve=True, naver=True, logo=False, active=True
